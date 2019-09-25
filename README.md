@@ -16,11 +16,10 @@ To install TorchText:
 pip install torchtext
 ```
 
-We'll also make use of spaCy to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install both the English and German models with:
+We'll also make use of spaCy to tokenize our data. To install spaCy, follow the instructions [here](https://spacy.io/usage/) making sure to install the English models:
 
 ``` bash
 python -m spacy download en
-python -m spacy download de
 ```
 
 ## Tutorials
