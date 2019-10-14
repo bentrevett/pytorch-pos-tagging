@@ -28,7 +28,7 @@ python -m spacy download en
 
     This tutorial covers how to implement the most basic of PoS models - a multi-layer bi-directional RNN with pre-trained  GloVe embeddings. 
 
-* 2 - [NestedField, CharCNN and Inference](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20NestedField%20and%20CharCNN.ipynb)
+* 2 - [NestedField, CharCNN and Inference](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20NestedField%2C%20CharCNN%20and%20Inference.ipynb)
 
     Now we have a basic PoS tagger working we can improve on it. In this tutorial we introduce the `NestedField` - a TorchText field that processes another field. The `NestedField` provides an easy way to get both the words and characters for the sequences we want to tag. We continue to embed the words as before, using an embedding layer, but we embed the characters using a convolutional neural network (CNN). Finally, we show how to use the model for inference, allowing us to tag any input sentence.
 
