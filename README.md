@@ -1,6 +1,6 @@
 # PyTorch PoS Tagging [In Progress]
 
-This repo contains tutorials covering how to do part-of-speech (PoS) tagging using [PyTorch](https://github.com/pytorch/pytorch) 1.2 and [TorchText](https://github.com/pytorch/text) 0.4 using Python 3.7.
+This repo contains tutorials covering how to do part-of-speech (PoS) tagging using [PyTorch](https://github.com/pytorch/pytorch) 1.4 and [TorchText](https://github.com/pytorch/text) 0.5 using Python 3.7.
 
 These tutorials will cover getting started with the de facto approach to PoS tagging: recurrent neural networks (RNNs). The first introduces a simple RNN network. The second covers how to use TorchText's `NestedField` in order to get the characters for each word, and how to feed these to a CharCNN. 
 
@@ -24,13 +24,9 @@ python -m spacy download en
 
 ## Tutorials
 
-* 1 - [Simple RNN POS Tagger](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/1%20-%20Simple%20RNN%20PoS%20Tagger.ipynb)
+* 1 - [BiLSTM POS Tagger](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/1%20-%20BiLSTM%20PoS%20Tagger.ipynb)
 
-    This tutorial covers how to implement the most basic of PoS models - a multi-layer bi-directional RNN with pre-trained  GloVe embeddings. 
-
-* 2 - [NestedField, CharCNN and Inference](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20NestedField%2C%20CharCNN%20and%20Inference.ipynb)
-
-    Now we have a basic PoS tagger working we can improve on it. In this tutorial we introduce the `NestedField` - a TorchText field that processes another field. The `NestedField` provides an easy way to get both the words and characters for the sequences we want to tag. We continue to embed the words as before, using an embedding layer, but we embed the characters using a convolutional neural network (CNN). Finally, we show how to use the model for inference, allowing us to tag any input sentence.
+    This tutorial covers the workflow of a PoS tagging project with PyTorch and TorchText. We'll introduce the basic TorchText concepts such as: defining how data is processed; using TorchText's datasets and how to use pre-trained embeddings. Using PyTorch we built a strong baseline model: a multi-layer bi-directional LSTM. We also show how the model can be used for inference to tag any input text.
 
 ## References
 
