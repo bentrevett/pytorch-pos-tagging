@@ -2,7 +2,7 @@
 
 This repo contains tutorials covering how to do part-of-speech (PoS) tagging using [PyTorch](https://github.com/pytorch/pytorch) 1.4 and [TorchText](https://github.com/pytorch/text) 0.5 using Python 3.7.
 
-These tutorials will cover getting started with the de facto approach to PoS tagging: recurrent neural networks (RNNs). The first introduces a bi-directional LSTM (BiLSTM) network. The second covers how to use a pretrained Transformer model to provide embeddings which will be used by the BiLSTM to predict the PoS tags.
+These tutorials will cover getting started with the de facto approach to PoS tagging: recurrent neural networks (RNNs). The first introduces a bi-directional LSTM (BiLSTM) network. The second covers how to fine-tune a pretrained Transformer model.
 
 **If you find any mistakes or disagree with any of the explanations, please do not hesitate to [submit an issue](https://github.com/bentrevett/pytorch-pos-tagging/issues/new). I welcome any feedback, positive or negative!**
 
