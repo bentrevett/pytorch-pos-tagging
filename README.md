@@ -34,9 +34,9 @@ python -m spacy download en
 
     This tutorial covers the workflow of a PoS tagging project with PyTorch and TorchText. We'll introduce the basic TorchText concepts such as: defining how data is processed; using TorchText's datasets and how to use pre-trained embeddings. Using PyTorch we built a strong baseline model: a multi-layer bi-directional LSTM. We also show how the model can be used for inference to tag any input text.
 
-* 2 - [Pretrained Transformers for PoS Tagging](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20Pretrained%20Transformers%20for%20PoS%20Tagging.ipynb)[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20Pretrained%20Transformers%20for%20PoS%20Tagging.ipynb)
+* 2 - [Fine-tuning Pretrained Transformers for PoS Tagging](https://github.com/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20Fine-tuning%20Pretrained%20Transformers%20for%20PoS%20Tagging.ipynb)[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bentrevett/pytorch-pos-tagging/blob/master/2%20-%20Fine-tuning%20Pretrained%20Transformers%20for%20PoS%20Tagging.ipynb)
 
-    This tutorial covers how to use a pretrained Transformer model, provided by the `transformers` library, by integrating it with TorchText. We use a pretrained BERT model to provide the embeddings for our input text and apply the BiLSTM introduced in the previous tutorial to predict tags based on these embeddings.
+    This tutorial covers how to fine-tune a pretrained Transformer model, provided by the `transformers` library, by integrating it with TorchText. We use a pretrained BERT model to provide the embeddings for our input text and input these embeddings to a linear layer that will predict tags based on these embeddings.
 
 ## References
 
